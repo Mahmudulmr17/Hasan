@@ -718,6 +718,7 @@
                 <label for="" class="contact__form-tag">Your Name</label>
                 <input
                   type="text"
+                  name="name" id="name"                       
                   placeholder="Your Name"
                   class="contact__form-input"
                   required
@@ -728,6 +729,7 @@
                 <label for="" class="contact__form-tag">Your Email</label>
                 <input
                   type="email"
+                  name="email" id="email
                   placeholder="Your Email"
                   class="contact__form-input"
                   required
@@ -739,6 +741,8 @@
                 <textarea
                   placeholder="Write your project"
                   class="contact__form-input"
+                  name="message" id="message"
+                  minlength="28"
                   cols="30"
                   rows="10"
                   required
@@ -811,5 +815,11 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('3KZlxZNNwZk9NY71t')
+</script>
   </body>
 </html>
